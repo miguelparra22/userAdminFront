@@ -1,0 +1,11 @@
+[
+    {
+       "name": "Miguel Angel",
+       "surname": "Orjuela",
+       "age": "22",
+       "dateOfBirth": "20/03/2000",
+       "password": "holamundo",
+       "rolId": "1",
+       "rolName": "Developer"
+    }
+]

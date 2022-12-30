@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./Assets/styles/style.css">
+    <title>Home</title>
+</head>
+<body>
+
+    <style>
+        .main-dashboard{
+            
+            width: 100%;
+            height: 100vh;;
+            display: flex;
+        }
+
+        .main-navBar{
+            width: 20%;
+            height: 100vh;
+            display: flex;
+            border: 1px solid #ddd;
+        }
+
+        .container-user-dashboard{
+            
+            width: 80%;
+            height: 100vh;
+            padding: 10px;
+        }
+
+        .main-navBar button{
+           width: 100%;
+           padding: 15px;
+           background: none;
+           border: none;
+        }
+
+        .main-navBar button:hover{
+            background:  var(--color-primary);
+        }
+        
+
+         .container-grid-user{
+            width: 100%;
+            border: 1px solid black;
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            max-height: 397px;
+            overflow-y: scroll;
+            scroll-behavior: smooth;
+         }
+
+        .grid-user-dashboard{
+            width: 80%;
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin: 3px;
+            cursor: pointer;
+            transition: all 1s;
+        }
+
+        .grid-user-dashboard:hover{
+            color: #ddd;
+            background: blue;
+        }
+
+        
+    
+    </style>
+
+    <main class="main-dashboard">
+        <section class="main-navBar">
+            <div class="container-button-navBar">
+                <div class="img-container">
+                   <img src="" alt="user image">
+                </div>
+                <button>Inicio</button>
+                <button>Tus datos</button>
+                <button>Ingresar nuevo usuario</button>
+                <button>Salir</button>
+            </div>
+        </section>
+        <section class="container-user-dashboard">
+             <div>
+                <h2>Miguel Angel Orjuela</h2>
+             </div>
+             <hr>
+
+             <div class="container-user-filter">
+                <div class="container-input">
+                    <label for="">Enter Email</label>
+                    <input type="text" class="form-control"> 
+                </div>
+                <button class="selectButton">Select All Users</button>
+             </div>
+
+             <div class="container container-grid-user">
+                <div class="grid-user-dashboard">
+                    <p>Nombre: Miguel Angel Orjuela</p>
+                    <p>Edad: 22</p>
+                    <p>Email: orjuelaparra@gmail.com</p>
+                </div>
+             </div>
+             
+        </section>
+
+
+    </main>
+
+
+<script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+<script src="./node_modules/jquery/dist/jquery.js"></script>
+<script src="./node_modules/popper.js/dist/popper.js"></script>
+</body>
+</html>

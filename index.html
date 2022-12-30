@@ -5,11 +5,107 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./Assets/styles/style.css">
 
     <title>Login</title>
 </head>
+
 <body>
-    <h1>Hola mundo</h1>
+    <main class="main-index">  
+      <section class="row main-login">
+          <div class="col-md-6 container-login-left">
+               <div class="row">
+                 <div class="col-md-12">
+                   <h1 class="">Welcome!</h1>
+                </div>
+                <div class="col-md-12 p-4">
+                    <p>
+                        This is my application about user management, 
+                        thanks for watching. If you don't have a user, register! It's free
+                    </p> 
+                  <button class="btn btn-primary-color" id="sing-up-button" data-bs-toggle="modal" data-bs-target="#staticBackdrop" >Sing-up</button>
+                </div>
+               </div>
+          </div>
+          <div class="col-md-6 container-login-right">
+             <div class="card-login effect-glass">
+                <div class="row">
+                  <div class="col-sm-12 col-md-12 p-3">
+                    <h2 class="text-center">Sing in</h2>
+                  </div>
+                  <div class="col-md-10 m-auto p-3">
+                       <label for="email-user">Email</label>
+                       <input type="text" class="form-control" id="email-user">
+                  </div>
+                  <div class="col-md-10 m-auto p-3">
+                        <label for="pass-user">Password</label>
+                       <input type="text" class="form-control" id="pass-user">
+                   </div>
+                   <div class="col-xs-12 col-sm-6 col-md-12 m-auto p-3 container-button" >
+                        <button class="btn">Submit</button>
+                    </div>
+                   <div class="col-xs-12 col-sm-6 col-md-12 m-auto p-3">
+                   
+                   </div>
+                </div>
+             </div>       
+          </div>
+
+          
+          <!-- Modal for  -->
+          <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+              <div class="modal-content effect-glass">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="staticBackdropLabel">Registro</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                            <label for="">Name</label>
+                            <input type="text" placeholder="Enter your name"  class="form-control" id="name"/>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                            <label for="">Surname</label>
+                            <input type="text" placeholder="Enter your surname"  class="form-control"/>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                            <label for="">Age</label>
+                            <input type="text" placeholder="Enter your Age"  class="form-control"/>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                            <label for="">Email</label>
+                            <input type="text" placeholder="Enter your Email"  class="form-control"/>
+                        </div>
+                        <div>
+                            <label for="">Password</label>
+                            <input type="text" placeholder="Enter your Password"  class="form-control"/>
+                        </div>
+                        <div>
+                            <label for="">Password</label>
+                            <input type="text" placeholder="Enter your Password Again" class="form-control">
+                        </div>
+                        <div>
+                            <label for="">Role</label>
+                            <input type="text" placeholder="Enter your Role"  class="form-control">
+                        </div>
+
+                    </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Submit</button>
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+
+
+      <!-- Button trigger modal -->
+
+    </main>
 </body>
 <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
 <script src="./node_modules/jquery/dist/jquery.js"></script>
